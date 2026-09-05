@@ -1,0 +1,11 @@
+# AgriCon diagnosis backend.
+# torch is CPU-only on purpose: the whole AgriCon serving target is CPU
+# (see the project's model decisions doc). Install the CPU wheel to avoid
+# pulling ~2GB of CUDA that this never uses:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+numpy>=1.24
+pillow>=10.0
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9

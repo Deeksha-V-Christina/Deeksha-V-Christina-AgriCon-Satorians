@@ -1,0 +1,15 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# In the Render dashboard: New + -> Blueprint -> point at this repo. Render
+# reads this file and creates the service below automatically (free plan,
+# no credit card required).
+services:
+  - type: web
+    name: agricon
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: AGRICON_CORS
+        value: "*"

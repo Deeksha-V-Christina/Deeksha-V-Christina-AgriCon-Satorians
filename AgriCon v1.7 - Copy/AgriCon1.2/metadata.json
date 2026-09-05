@@ -1,0 +1,6 @@
+{
+  "name": "Agricon - Smart Farm & Agronomy Platform",
+  "description": "A futuristic precision agriculture and agronomy app with real-time drone telemetry, crop diagnostics, farming calculators, agricultural library, and community forum.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
